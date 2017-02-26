@@ -1,0 +1,36 @@
+---
+output: html_document
+---
+## 
+This app based on the OpenFlights Airports Dataset that contains over 7,000 airports over the World http://openflights.org/.
+
+1. On the side panel you can see the input form to select some cities (or areas/places in the world) to display the names of the available airports, their coordinates and other information to data.table and leaflet map.
+
+2. Slider control below allows you to select the airports depending on their altitude.
+
+3. Section "Distance matrix" is a two-dimensional array containing the distances, taken pairwise, between the elements of a set. 
+
+Each entry of dataset contains the following information:
+- Name	- Name of airport. May or may not contain the City name;
+
+- City	- Main city served by airport. May be spelled differently from Name;
+
+- Country	- Country or territory where airport is located. See countries.dat to cross-reference to ISO 3166-1 codes;
+
+- IATA	- 3-letter IATA code. Null if not assigned/unknown;
+
+- ICAO	- 4-letter ICAO code. Null if not assigned;
+
+- Latitude	- Decimal degrees, usually to six significant digits. Negative is South, positive is North;
+
+- Longitude	- Decimal degrees, usually to six significant digits. Negative is West, positive is East;
+
+- Altitude	- In meters;
+
+- Timezone	- Hours offset from UTC. Fractional hours are expressed as decimals, eg. India is 5.5;
+
+- DST	- Daylight savings time. One of E (Europe), A (US/Canada), S (South America), O (Australia), Z (New Zealand), N (None) or U (Unknown);
+
+- Tz - database time zone	Timezone in "tz" (Olson) format, eg. "America/Los_Angeles".
+
+Note: Rules for daylight savings time change from year to year and from country to country. The current data is an approximation for 2009, built on a country level. Most airports in DST-less regions in countries that generally observe DST (eg. AL, HI in the USA, NT, QL in Australia, parts of Canada) are marked incorrectly.
